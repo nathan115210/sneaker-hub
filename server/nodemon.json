@@ -1,0 +1,11 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "exec": "ts-node-dev --respawn --transpile-only --exit-child ./src/app.ts",
+  "env": {
+    "PORT": "5000"
+  },
+  "execMap": {
+    "ts": "node --trace-warnings -r ts-node/register"
+  }
+}
